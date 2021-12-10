@@ -30,7 +30,7 @@ export default function Home() {
           alt=""
         />
         <div className="home__inputContainer">
-          <Search/>
+          <Search hideBottons/>
         </div>
       </div>
     </div>

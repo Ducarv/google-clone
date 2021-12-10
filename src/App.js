@@ -1,21 +1,20 @@
 import React from 'react';
 import Home from './pages/Home';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Search from './components/Search';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <Routes>
-          <Route path="/search" element={<Search/>}>
+        <Switch>
+          <Route path="/search">
             <h1>This is the search page</h1>
           </Route>
-          <Route path="/" element={<Home/>}>
+          <Route path="/">    
             <Home />
           </Route>
-        </Routes>
+        </Switch>
       </Router>
     </div>
   );
